@@ -48,7 +48,7 @@ SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🎬 <b>𝙏𝙞𝙩𝙡𝙚:</b> <a href={url}>{title} {year}</a>\n⏰ <b>𝙍𝙪𝙣𝙏𝙞𝙢𝙚:</b> {runtime} min\n🌟 <b>𝙍𝙖𝙩𝙞𝙣𝙜:</b> <a href={url}/ratings>{rating}</a> /10 <i>({votes} Votes)<i/>\n🔊 <b>𝙇𝙖𝙣𝙜𝙪𝙖𝙜𝙚𝙨:</b> {languages}\n🎭 <b>𝙂𝙚𝙣𝙧𝙚𝙨:</b> {genres}\n📆 <b>𝙍𝙚𝙡𝙚𝙖𝙨𝙚 𝙄𝙣𝙛𝙤:</b> <a href={url}/releaseinfo>{release_date}</a>\n🎯 <b>𝙙𝙞𝙧𝙚𝙘𝙩𝙤𝙧:</b> {director}\n✍️ <b>𝙒𝙧𝙞𝙩𝙚𝙧:</b> {writer}\n📝 <b>𝙎𝙮𝙣𝙤𝙥𝙨𝙞𝙨:</b> {plot} \n\nMy PM: @SpaciousUniverseBot")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
+SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "False"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
