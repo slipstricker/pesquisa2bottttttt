@@ -38,11 +38,11 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TMWAD')
+            InlineKeyboardButton('📢 Canal Oficial', url='https://t.me/BoxAnime')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Thank you For Adding Me In {message.chat.title} ❣️\n\nPlz promote me as Admin ,After that i can Reply requests.</b>",
+            text=f"<b>Obrigado por me adicionar! {message.chat.title} ❣️\n\nMe promova como administrador, depois disso eu irei funcionar normalmente.</b>",
             reply_markup=reply_markup)
 
 
