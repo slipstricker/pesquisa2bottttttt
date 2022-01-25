@@ -42,10 +42,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='http://t.me/TMWAD')
-            ],[
+            InlineKeyboardButton('🔍 Pesquisar', switch_inline_query_current_chat=''),
             InlineKeyboardButton('ℹ️ Status', callback_data='stats')
+            ],[
+            InlineKeyboardButton('🤖 Canal Oficial', url='http://t.me/BoxAnime')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
