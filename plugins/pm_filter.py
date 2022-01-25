@@ -596,7 +596,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁[ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📁 {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
