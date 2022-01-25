@@ -20,10 +20,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/BoxAnime')
-            ],
-            [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('🤖 Canal oficial', url='https://t.me/BoxAnime')
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
