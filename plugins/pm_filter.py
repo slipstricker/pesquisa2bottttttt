@@ -660,7 +660,7 @@ async def auto_filter(client, msg, spoll=False):
             url = imdb['url']
         )
     else:
-        cap = f"Resultados da sua pesquisa {search} \nCanal oficial @BoxAnime"
+        cap = f"Resultados da sua pesquisa: <b>{search}</b> \nCanal oficial @BoxAnime"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
